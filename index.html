@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STANDWA SAM ❤️</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<!-- 🎵 MUSIC (ONLY ONCE) -->
+<audio id="bgMusic" loop>
+    <source src="mp3/Kelvin-Momo-Emhlabeni-Ft-Da-Muziqal-Chef-Tracy-Thatohatsi-(HipHopKit.com).mp3" type="audio/mp3">
+</audio>
+
+<!-- NAVIGATION -->
+<div class="container">
+
+    <button class="btn" onclick="showPage('home')">Home</button>
+    <button class="btn" onclick="showPage('gallery')">MR MOUKANGWE </button>
+    <button class="btn" onclick="showPage('heart')">MRS MOUKANGWE</button>
+
+</div>
+
+<!-- HOME PAGE -->
+<section id="home" class="page">
+
+    <div class="container">
+
+        <h1>STANDWA SAM ❤️</h1>
+
+        <div class="slideshow">
+            <img id="slide" src="images/IMG-20260219-WA0072.jpg">
+        </div>
+
+        <p>
+            Im going to limpopo for a month and i want you to play this once you miss me standwa sam.
+            I love you so much.
+        </p>
+
+        <button id="musicBtn" class="btn">🎵 Play Music</button>
+
+    </div>
+
+</section>
+
+<!-- HEART PAGE -->
+<section id="heart" class="page" style="display:none;">
+
+    <div class="container">
+        <h1>Mrs Moukangwe ❤️</h1>
+
+        <img src="images/IMG-20260219-WA0072.jpg" width="300">
+
+        <br><br>
+
+        <button class="btn" onclick="showPage('gallery')">
+            YOUR MAN ❤️
+        </button>
+    </div>
+<video width="300" controls>
+    <source src="images 2/VID-20260527-WA0018.mp4" height="300" controls>
+
+<video width="300" controls>
+    <source src="c:\Users\Cleopatra\OneDrive\Documents\GitHub\kenadamane2\images 2\VID-20260530-WA0013.mp4" height="300" controls>
+</section>
+
+<!-- GALLERY PAGE -->
+<section id="gallery" class="page" style="display:none;">
+
+    <div class="container">
+        <h1>Mr Moukangwe 📸❤️</h1>
+
+        <div class="slideshow">
+            <img id="slide2" src="images 2/IMG-20260220-WA0031.jpg">
+        </div>
+
+        <br><br>
+
+        <button class="btn" onclick="showPage('home')">
+            🏠 Back Home
+        </button>
+
+    </div>
+
+</section>
+
+<script src="gallery.js"></script>
+
+<script>
+function showPage(page) {
+
+    document.querySelectorAll(".page").forEach(p => {
+        p.style.display = "none";
+    });
+
+    document.getElementById(page).style.display = "block";
+}
+</script>
+
+</body>
+</html>
